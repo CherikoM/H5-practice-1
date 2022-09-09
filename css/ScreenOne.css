@@ -1,0 +1,141 @@
+/* 第一屏 开始 */
+#content>.list>.home {
+  background: url("../img/bg1.jpg") no-repeat;
+  overflow: hidden;
+}
+
+#content>.list>.home .home1 {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: 1s transform, 1s opacity;
+}
+
+#content>.list>.home .home1>li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+#content>.list>.home .home1>li>div {
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#content>.list>.home .home1>li:nth-child(1) {
+  background-color: #dc6c5f;
+}
+
+#content>.list>.home .home1>li:nth-child(2) {
+  background-color: #95dc84;
+}
+
+#content>.list>.home .home1>li:nth-child(3) {
+  background-color: #69b9d2;
+}
+
+#content>.list>.home .home1>li:nth-child(4) {
+  background-color: #000000;
+}
+
+#content>.list>.home .home1>li.active {
+  visibility: visible;
+}
+
+/* 从左往右 */
+#content>.list>.home .home1>li.leftHide {
+  visibility: hidden;
+  animation: .5s leftHide 1 linear;
+}
+
+#content>.list>.home .home1>li.rightShow {
+  visibility: visible;
+  animation: .5s rightShow 1 linear;
+}
+
+@keyframes leftHide {
+  0% {
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(-40%) rotateY(30deg) scale(.8);
+  }
+
+  100% {
+    transform: translateZ(-200px);
+  }
+}
+
+@keyframes rightShow {
+  0% {
+    visibility: hidden;
+    transform: translateZ(-200px);
+  }
+
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(.8);
+  }
+
+  100% {}
+}
+
+/* 从右往左 */
+#content>.list>.home .home1>li.leftShow {
+  visibility: visible;
+  animation: .5s leftShow 1 linear;
+}
+
+#content>.list>.home .home1>li.rightHide {
+  visibility: hidden;
+  animation: .5s rightHide 1 linear;
+}
+
+@keyframes leftShow {
+  0% {
+    visibility: hidden;
+    transform: translateZ(-200px);
+  }
+
+  50% {
+    transform: translateX(-40%) rotateY(30deg) scale(.8);
+  }
+
+  100% {}
+}
+
+@keyframes rightHide {
+  0% {
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(.8);
+  }
+
+  100% {
+    transform: translateZ(-200px);
+  }
+}
+
+
+#content>.list>.home .home2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  text-align: center;
+  transition: 1s transform, 1s opacity;
+}
+
+#content>.list>.home .home2>li {
+  display: inline-block;
+}
+/* 第一屏 结束 */

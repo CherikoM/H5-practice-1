@@ -1,0 +1,47 @@
+/* 内容区样式 开始 */
+#content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#content>.list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: .5s top;
+}
+
+#content>.list>li {
+  position: relative;
+  background-position: center center !important;
+}
+
+#content>.list>li>section {
+  width: 1100px;
+  height: 520px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* ...... */
+
+#content> .dot {
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  margin-top: -70px;
+  z-index: 99;
+
+}
+
+#content> .dot>li {
+  margin-top: 10px;
+}
+
+/* 内容区样式 结束 */

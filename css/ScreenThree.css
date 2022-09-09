@@ -1,0 +1,130 @@
+/* 第三屏 开始*/
+#content>.list>.works {
+  background: url("../img/bg4.jpg") no-repeat;
+  overflow: hidden;
+}
+
+#content>.list>.works .works1 {
+  margin: 50px 0 100px 50px;
+  position: relative;
+  z-index: 2;
+}
+
+#content>.list>.works .works2 {
+  margin-left: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+#content>.list>.works .works2>.item {
+  float: left;
+  width: 220px;
+  height: 133px;
+  margin: 0 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+#content>.list>.works .works2>.item:last-of-type {
+  width: 332px;
+}
+
+#content>.list>.works .works2>.item .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+#content>.list>.works .works2>.item img {
+  transition: .3s transform;
+}
+
+#content>.list>.works .works2>.item .mask .icon {
+  width: 32px;
+  height: 34px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: url("../img/zoomico.png") no-repeat;
+  transition: .3s background-position;
+}
+
+#content>.list>.works .works2>.item .mask .icon:hover {
+  background-position: 0 -36px;
+}
+
+#content>.list>.works .works2>.item:hover .mask {
+  opacity: .7;
+}
+
+#content>.list>.works .works2>.item:hover img {
+  transform: rotate(15deg) scale(1.6);
+}
+
+#content>.list>.works .works3 {
+  width: 167px;
+  height: 191px;
+  background: url("../img/robot.png") no-repeat;
+  position: absolute;
+  z-index: 2;
+  left: 900px;
+  top: 170px;
+  animation: works3Move 5s linear infinite;
+}
+
+@keyframes works3Move {
+  0% {
+    transform: translateX(0px) rotateY(0deg);
+  }
+
+  49.9% {
+    transform: translateX(-499px) rotateY(0deg);
+  }
+
+  50% {
+    transform: translateX(-500px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+}
+
+#content>.list>.works .pencil1 {
+  width: 180px;
+  height: 97px;
+  background: url("../img/pencel1.png") no-repeat;
+  position: absolute;
+  transition: 1s transform;
+  left: 500px;
+  top: 0;
+}
+
+#content>.list>.works .pencil2 {
+  width: 268px;
+  height: 38px;
+  background: url("../img/pencel2.png") no-repeat;
+  position: absolute;
+  transition: 1s transform;
+  left: 300px;
+  top: 250px;
+}
+
+#content>.list>.works .pencil3 {
+  width: 441px;
+  height: 231px;
+  background: url("../img/pencel3.png") no-repeat;
+  position: absolute;
+  transition: 1s transform;
+  left: 650px;
+  top: 300px;
+}
+
+/* 第三屏 结束*/

@@ -1,0 +1,86 @@
+/* 第四屏 开始 */
+#content>.list>.about {
+  background: url("../img/bg3.jpg") no-repeat;
+  overflow: hidden;
+}
+
+#content>.list>.about .about1 {
+  margin: 50px 0 100px 50px;
+}
+
+#content>.list>.about .about2 {
+  margin-left: 50px;
+  width: 400px;
+}
+
+#content>.list>.about .about3>.item {
+  width: 260px;
+  height: 200px;
+  border: 5px solid rgba(255, 255, 255, .5);
+  border-radius: 8px;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  transition: .5s transform;
+}
+
+#content>.list>.about .about3>.item:hover>div {
+  transition: .5s transform;
+  transform: scale(1);
+}
+
+#content>.list>.about .about3>.item:nth-child(1) {
+  left: 750px;
+  top: 50px;
+}
+
+#content>.list>.about .about3>.item:nth-child(2) {
+  left: 600px;
+  top: 290px;
+}
+
+#content>.list>.about .about3>.item>div,
+#content>.list>.about .about3>.item>ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#content>.list>.about .about3>.item>div {
+  transform: scale(1.5);
+}
+
+#content>.list>.about .about3>.item:nth-child(1)>div {
+  background: url("../img/about2.jpg") no-repeat;
+  transition: .5s transform;
+}
+
+#content>.list>.about .about3>.item:nth-child(2)>div {
+  background: url("../img/about4.jpg") no-repeat;
+  transition: .5s transform;
+}
+
+#content>.list>.about .about3>.item>ul>li {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+#content>.list>.about .about3>.item>ul>li>img {
+  position: absolute;
+  transition: .5s top, .5s left;
+}
+
+
+#content>.list>.about .about4 {
+  width: 357px;
+  height: 998px;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  background: url("../img/greenLine.png") no-repeat;
+}
+
+/* 第四屏 结束 */

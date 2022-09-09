@@ -1,0 +1,128 @@
+/* 第二屏 开始 */
+#content>.list>.course {
+  background: url("../img/bg2.jpg") no-repeat;
+  overflow: hidden;
+}
+
+#content>.list>.course .course1 {
+  margin: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+#content>.list>.course .course2 {
+  margin-left: 50px;
+  width: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+#content>.list>.course .course3 {
+  width: 480px;
+  position: absolute;
+  right: -600px;
+  top: -240px;
+  z-index: 2;
+}
+
+#content>.list>.course .course3 .line {
+  position: absolute;
+  top: -7px;
+  width: 9px;
+  height: 410px;
+  background: url("../img/plus_row.png") no-repeat;
+}
+
+#content>.list>.course .course3 .line:nth-of-type(1) {
+  left: -5px;
+}
+
+#content>.list>.course .course3 .line:nth-of-type(2) {
+  left: 115px;
+}
+
+#content>.list>.course .course3 .line:nth-of-type(3) {
+  left: 235px;
+}
+
+#content>.list>.course .course3 .line:nth-of-type(4) {
+  left: 355px;
+}
+
+#content>.list>.course .course3 .line:nth-of-type(5) {
+  left: 475px;
+}
+
+
+#content>.list>.course .course3 .item {
+  float: left;
+  width: 120px;
+  height: 132px;
+  position: relative;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+#content>.list>.course .course3 .item:hover .face {
+  transform: rotateY(360deg);
+}
+
+#content>.list>.course .course3 .item:hover .backface {
+  transform: rotateY(180deg);
+}
+
+#content>.list>.course .course3 .item .face,
+#content>.list>.course .course3 .item .backface {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  transition: .7s transform;
+}
+
+#content>.list>.course .course3 .item .face {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #009ee0;
+}
+
+#content>.list>.course .course3 .item .backface {
+  background: url("../img/bks.png") no-repeat;
+  background-position: center center;
+  backface-visibility: hidden;
+}
+
+#content>.list>.course .plane1 {
+  width: 359px;
+  height: 283px;
+  background: url("../img/plane1.png") no-repeat;
+  position: absolute;
+  left: 300px;
+  top: -100px;
+  transition: 1s transform;
+}
+
+#content>.list>.course .plane2 {
+  width: 309px;
+  height: 249px;
+  background: url("../img/plane2.png") no-repeat;
+  position: absolute;
+  left: -100px;
+  top: 200px;
+  transition: 1s transform;
+}
+
+#content>.list>.course .plane3 {
+  width: 230px;
+  height: 182px;
+  background: url("../img/plane3.png") no-repeat;
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  transition: 1s transform;
+}
+
+/* 第二屏 结束 */

@@ -1,0 +1,75 @@
+/* 第五屏 开始 */
+#content>.list>.team {
+  background: url("../img/bg5.jpg") no-repeat;
+  overflow: hidden;
+}
+
+#content>.list>.team .team1,
+#content>.list>.team .team2 {
+  width: 400px;
+  margin: 50px;
+  transition: .5s transform;
+}
+
+#content>.list>.team .team1 {
+  float: left;
+}
+
+#content>.list>.team .team2 {
+  float: right;
+}
+
+#content>.list>.team .team3 {
+  width: 944px;
+  height: 448px;
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  margin-left: -472px;
+}
+
+#content>.list>.team .team3>li {
+  width: 118px;
+  height: 100%;
+  background: url("../img/team.png") no-repeat;
+  float: left;
+  transition: .3s opacity;
+}
+
+#content>.list>.team .team3>li:nth-child(1) {
+  background-position: 0 0;
+}
+
+#content>.list>.team .team3>li:nth-child(2) {
+  background-position: -118px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(3) {
+  background-position: -236px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(4) {
+  background-position: -354px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(5) {
+  background-position: -472px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(6) {
+  background-position: -590px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(7) {
+  background-position: -708px 0;
+}
+
+#content>.list>.team .team3>li:nth-child(8) {
+  background-position: -826px 0;
+}
+
+#content>.list>.team canvas {
+  position: absolute;
+  top: 50px;
+}
+/* 第五屏 结束 */
